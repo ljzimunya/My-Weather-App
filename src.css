@@ -1,0 +1,46 @@
+body {
+  background: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.weather-app {
+  background: #006cbe;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+header {
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.search-input {
+  background-color: #f9f7fe;
+  border: solid;
+  color: #006cbe;
+  font-size: 24px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 6px;
+}
+.search-button {
+  ackground-color: #f9f7fe;
+  border: solid;
+  color: #006cbe;
+  font-size: 24px;
+  padding: 10px;
+  width: 30%;
+  border-radius: 6px;
+}
+h1 {
+  color: white;
+  line-height: 10px;
+}
+.temperature {
+  position: relative;
+  top: -8px;
+  margin-left: 500px;
+  top: -100px;
+  font-size: 24px;
+}
