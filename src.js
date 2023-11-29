@@ -61,12 +61,16 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `  <div class="weather-forecast-date">${day}</div>
+      ` <div class="row">
+      <div class = "col-2">
+       <div class="weather-forecast-date">${day}</div>
               <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png" alt="
               width="36"/>
               <div class="weather-forecast-temperature"> <span class="weather-forecast-temperature-max"> 18°C</span><span class="weather-forecast-temperature-min">12°C</span></div>
+             </div></div>
              `;
   });
+
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
