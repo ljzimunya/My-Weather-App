@@ -70,29 +70,28 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
       forecastHtml =
         forecastHtml +
-        `<div class="row">
-      <div class = "col-2">
-       <div class="weather-forecast-date">${formatDay(day.time)}</div>
+        `      <div class = "row">
+        <div class="col-2>
+         <div class="weather-forecast-date">${formatDay(day.time)}</div>
               <img src="${day.condition.icon_url}" alt=""
-              width="24"/>
+              width="36"/>
               <div class="weather-forecast-temperature"> <span class="weather-forecast-temperature-max"> ${Math.round(
                 day.temperature.maximum
               )}°C</span><span class="weather-forecast-temperature-min">${Math.round(
           day.temperature.minimum
         )}°C</span></div>
-             </div></div>
+        </div></div>
              `;
     }
   });
 
-  let forecastElement = document.querySelector("#forecast");
+  let forecastElement = document.querySelector(".weather-forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 

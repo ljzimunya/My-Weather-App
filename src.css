@@ -46,7 +46,10 @@ h1 {
 }
 .weather-forecast {
   margin-top: 20px;
-  font-size: 16px;
+  display: flex;
+  text-align: centre;
+  justify-content: space-between;
+  font: 48px;
 }
 
 .weather-forecast-date {
